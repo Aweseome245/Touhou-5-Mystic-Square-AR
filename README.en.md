@@ -16,3 +16,5 @@ I've left information on the files, text and pictures in [Notes.txt](https://git
 [Mystic Toolkit](https://lunarcast.net/mystictk.php) was used to decompile and recompile the files, and program code was taken from [the ReC98 repository](https://github.com/nmlgc/ReC98/tree/xJeePx) and compiled with Tasm, which is provided in this repository.
 
 I used the Unixel font to make the Arabic font file.
+
+Contact me if you have any questions. You can find me on the [Arabsokyo](https://discord.gg/bvWXjqbt5t) Discord server.
