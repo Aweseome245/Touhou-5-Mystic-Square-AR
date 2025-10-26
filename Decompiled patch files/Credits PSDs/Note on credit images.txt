@@ -1,0 +1,1 @@
+When I compile the images and see them in game, the black pixels render as blue for some reason. I haven't been able to fix this as of yet and I'm not sure what's causing it even, so if anyone does know, please contact me or make a pull request.

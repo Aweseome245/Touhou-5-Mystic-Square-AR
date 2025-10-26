@@ -1,0 +1,1 @@
+BCROOT=D:\ENV\TC4J

@@ -1,0 +1,3627 @@
+#StageName[" U…cI{ Å` ÆµQ¥# ∂±g{  |¥# B¨*s¥#"]
+#StageBGM["eY^c∞& ∫»XT"]
+#BossBGM["ÀYMb ¢⁄Y∏"]
+
+TileIndexArray = [
+00,02,00,04,02,00,06,02,00,04,00,08,18,20,18,20,
+18,10,18,20,16,18,20,14,18,20,16,18,20,10,18,20,
+18,20,18,20,18,22,24,26
+]
+
+ScrollSpeedArray = [
+08,08,08,08,08,08,08,08,08,06,04,04,04,04,04,04,
+04,04,04,04,04,04,04,06,08,08,08,08,08,08,08,08,
+08,08,08,08,06,04,04,02,00
+]
+
+PROC
+	ANIMATION 4, 16
+	JINS 0, JINS0
+	SPAWN 180, 1, 10
+	HEADINGAD 64, 32, 64
+	MOVMENTAD 64, 32, 255, 64
+	JINS0:
+	JINS 1, JINS1
+	SPAWN 184, 1, 10
+	HEADINGAD 64, 32, 64
+	MOVMENTAD 64, 32, 1, 64
+	JINS1:
+	LEAVEA 
+	LOOP0:
+	HEADINGADU 32
+	LOOP LOOP0, 255
+	HALT 
+ENDP
+
+PROC
+	ANIMATION 4, 16
+	JINS 0, JINS2
+	SPAWN 180, 1, 20
+	HEADINGAD 68, 32, 56
+	MOVMENTAD 68, 32, 255, 20
+	JINS2:
+	JINS 1, JINS3
+	SPAWN 184, 1, 20
+	HEADINGAD 60, 32, 56
+	MOVMENTAD 60, 32, 1, 20
+	JINS3:
+	LEAVEA 
+	LOOP1:
+	HEADINGADU 32
+	LOOP LOOP1, 255
+	HALT 
+ENDP
+
+PROC
+	ANIMATION 2, 4
+	SHOTTYPE 18, 1, 0, 24, 44
+	SPAWN 180, 32, 25
+	JINS 0, JINS4
+	IMAGEIDX 196
+	HEADINGAD 32, 58, 16
+	JINS4:
+	JINS 1, JINS5
+	IMAGEIDX 198
+	HEADINGAD 96, 58, 16
+	JINS5:
+	LEAVEA 
+	LOOP2:
+	SPEEDADD 254
+	HEADINGADU 1
+	LOOP LOOP2, 28
+	IMAGEIDX 188
+	ANIMATION 4, 4
+	SAVEPOSD 32
+	ANIMATION 0, 4
+	IMAGEIDX 192
+	SAVEPOSD 16
+	ANIMATION 4, 4
+	FIRER 
+	SHOTTYPE 18, 3, 0, 24, 0
+	SHOTTYPEARC 2, 48
+	FIRER 
+	SOUND 9
+	SAVEPOSD 16
+	ANIMATION 4, 4
+	IMAGEIDX 188
+	SAVEPOSD 64
+	ANIMATION 2, 4
+	JINS 0, JINS6
+	IMAGEIDX 198
+	HEADINGAD 112, 2, 1
+	JINS6:
+	JINS 1, JINS7
+	IMAGEIDX 196
+	HEADINGAD 16, 2, 1
+	JINS7:
+	SPEEDADD 2
+	HEADINGADU 2
+	LOOP JINS7, 64
+	HEADINGADU 255
+	HALT 
+ENDP
+
+PROC
+	ANIMATION 4, 4
+	SPAWN 200, 16, 20
+	INVINCIBLEON 
+	PLAYERCOLLISIONOFF 
+	SAVEPOSD 64
+	LEAVEV 
+	INVINCIBLEOFF 
+	PLAYERCOLLISIONON 
+	JINS 0, JINS8
+	IMAGEIDX 180
+	HEADINGBXANGLED 32, 2, 16, 255
+	JINS8:
+	JINS 1, JINS9
+	IMAGEIDX 184
+	HEADINGBXANGLED 32, 254, 16, 255
+	JINS9:
+	MOVED 255
+	HALT 
+ENDP
+
+PROC
+	ANIMATION 4, 4
+	SHOTTYPE 16, 2, 0, 24, 0
+	SHOTTYPEARC 2, 2
+	SHOTMOVEMENTTYPE 10
+	SPAWN 200, 32, 20
+	INVINCIBLEON 
+	PLAYERCOLLISIONOFF 
+	SAVEPOSD 64
+	LEAVEA 
+	INVINCIBLEOFF 
+	PLAYERCOLLISIONON 
+	IMAGEIDX 192
+	SHOTANGLERND 
+	LOOP4:
+	JINS 0, JINS10
+	SHOTANGLEADD 56
+	JINS10:
+	JINS 1, JINS11
+	SHOTANGLEADD 200
+	JINS11:
+	FIRES 
+	SAVEPOSD 16
+	LOOP LOOP4, 4
+	ANIMATION 2, 4
+	JINS 0, JINS12
+	IMAGEIDX 196
+	HEADINGAD 24, 2, 1
+	JINS12:
+	JINS 1, JINS13
+	IMAGEIDX 198
+	HEADINGAD 104, 2, 1
+	JINS13:
+	SPEEDADD 2
+	HEADINGADU 2
+	LOOP JINS13, 64
+	MOVED 255
+	HALT 
+ENDP
+
+PROC
+	ANIMATION 4, 4
+	SPAWN 200, 6, 20
+	INVINCIBLEON 
+	PLAYERCOLLISIONOFF 
+	SAVEPOSD 64
+	LEAVEH 
+	INVINCIBLEOFF 
+	PLAYERCOLLISIONON 
+	JINS 0, JINS14
+	IMAGEIDX 180
+	HEADINGATOPLAYER 0, 48
+	JINS14:
+	JINS 1, JINS15
+	IMAGEIDX 184
+	HEADINGATOPLAYER 0, 48
+	JINS15:
+	JINS 2, JINS16
+	IMAGEIDX 180
+	HEADINGAD 64, 48, 48
+	JINS16:
+	JINS 3, JINS17
+	IMAGEIDX 184
+	HEADINGAD 64, 48, 48
+	JINS17:
+	HEADINGADU 255
+	HALT 
+ENDP
+
+PROC
+	SHOTTYPE 1, 1, 0, 32, 0
+	FIRER 
+	SOUND 8
+	HALT 
+ENDP
+
+Spawn {
+	Frame = 272
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1024
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 288
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1088
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 304
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1152
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 320
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1216
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 336
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1280
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 352
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1344
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 368
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1408
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 400
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 5120
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 416
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 5056
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 432
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4992
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 448
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4928
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 464
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4864
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 480
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4800
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 496
+	Amount = 1
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4736
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 600
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 2624
+		Y = -256
+		ItemType = 0
+	}
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1024
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 616
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 2720
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1120
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 632
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 2816
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1216
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 648
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 2912
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1312
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 664
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 3008
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1408
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 680
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 3104
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1504
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 696
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 3200
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1600
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 700
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 3520
+		Y = -256
+		ItemType = 0
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 5120
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 716
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 3424
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 5024
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 732
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 3328
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4928
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 748
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 3232
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4832
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 764
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 3136
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4736
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 780
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 3040
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4640
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 796
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 2944
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4544
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 900
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 512
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 5632
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 916
+	Amount = 2
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 768
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 5376
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 932
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 1024
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 5120
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 948
+	Amount = 2
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1280
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4864
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 964
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 1536
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 4608
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 980
+	Amount = 2
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 1792
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 4352
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 996
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 2048
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 4096
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1012
+	Amount = 2
+	Enemy {
+		Type = 0
+		SubType = 0
+		X = 2304
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 0
+		SubType = 1
+		X = 3840
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1028
+	Amount = 2
+	Enemy {
+		Type = 1
+		SubType = 0
+		X = 2560
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 1
+		SubType = 1
+		X = 3584
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1200
+	Amount = 1
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3072
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1220
+	Amount = 1
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3072
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1300
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3072
+		Y = -512
+		ItemType = 0
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3072
+		Y = -512
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1350
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3200
+		Y = -384
+		ItemType = 0
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2944
+		Y = -384
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1400
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3328
+		Y = -256
+		ItemType = 0
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2816
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1500
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3840
+		Y = -256
+		ItemType = 0
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2304
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1550
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3584
+		Y = -256
+		ItemType = 0
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2560
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1600
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3328
+		Y = -256
+		ItemType = 0
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2816
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1650
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3072
+		Y = -256
+		ItemType = 0
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3072
+		Y = -256
+		ItemType = 0
+	}
+}
+
+Spawn {
+	Frame = 1900
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1910
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1920
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1930
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1940
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1950
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1960
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1970
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 2048
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1980
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 1990
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2100
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2560
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 3584
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2200
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2048
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4096
+		Y = 768
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2300
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1536
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4608
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2400
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1024
+		Y = 1280
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5120
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2800
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2820
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2840
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2860
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2880
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2900
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2920
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2940
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2960
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 2980
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3000
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3020
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3040
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3060
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3080
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3100
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3120
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3140
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3160
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3180
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3200
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3220
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3240
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3260
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3280
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3300
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3320
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3340
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3360
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3380
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3400
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3420
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3440
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3460
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3480
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3500
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3520
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3540
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3560
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3580
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3600
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3620
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3640
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3660
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3680
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3700
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3720
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3740
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3760
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3780
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3800
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3820
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3840
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3860
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3880
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3900
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3920
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3940
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3960
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 3980
+	Amount = 1
+	Enemy {
+		Type = 3
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 4200
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2560
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 3584
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 4300
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2048
+		Y = 768
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4096
+		Y = 768
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 4400
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1536
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4608
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 4500
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1024
+		Y = 1280
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5120
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 4600
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 512
+		Y = 512
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5632
+		Y = 512
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 4700
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2560
+		Y = 2048
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 3584
+		Y = 2048
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 4800
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1024
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5120
+		Y = 1536
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 4900
+	Amount = 2
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 512
+		Y = 512
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5632
+		Y = 512
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5100
+	Amount = 8
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2560
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 3584
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2048
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4096
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1536
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4608
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1024
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5120
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5400
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5420
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 512
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5440
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 2048
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5460
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5480
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5500
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1536
+		ItemType = 254
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5520
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5540
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 768
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5560
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 512
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5580
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5600
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5620
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 768
+		ItemType = 254
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5640
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5660
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 768
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5680
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 256
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5700
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5720
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5740
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1536
+		ItemType = 254
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5760
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5780
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 256
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5800
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5820
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5840
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5860
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1024
+		ItemType = 254
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5880
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 768
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 5900
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5920
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5940
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1536
+		ItemType = 254
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5960
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 5980
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 256
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6000
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 512
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6020
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6040
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 256
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6060
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6080
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6100
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1024
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6120
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6140
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6160
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6180
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 512
+		ItemType = 254
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6200
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6220
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1024
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6240
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 256
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6260
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 768
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6280
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6300
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 768
+		ItemType = 254
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6320
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 1280
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6340
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 1536
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 256
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6360
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 0
+		X = 15984
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 1
+		X = 15984
+		Y = 768
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 6380
+	Amount = 2
+	Enemy {
+		Type = 5
+		SubType = 2
+		X = 15984
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 5
+		SubType = 3
+		X = 15984
+		Y = 256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6600
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6650
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3200
+		Y = -384
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2944
+		Y = -384
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6700
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3328
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2816
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6750
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6800
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 2944
+		Y = -384
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3200
+		Y = -384
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6850
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 2816
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3328
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6900
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 6950
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3200
+		Y = -384
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2944
+		Y = -384
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 7000
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3328
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 2816
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 7050
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 7100
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 2944
+		Y = -384
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3200
+		Y = -384
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 7150
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 2816
+		Y = -256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3328
+		Y = -256
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 7200
+	Amount = 2
+	Enemy {
+		Type = 2
+		SubType = 0
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 2
+		SubType = 1
+		X = 3072
+		Y = -512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 7300
+	Amount = 8
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2560
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 3584
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2048
+		Y = 512
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4096
+		Y = 512
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1536
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4608
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1024
+		Y = 1024
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5120
+		Y = 1024
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 7550
+	Amount = 8
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2560
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 3584
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2048
+		Y = 768
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4096
+		Y = 768
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1536
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4608
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1024
+		Y = 256
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5120
+		Y = 256
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 7800
+	Amount = 8
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2560
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 3584
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 2048
+		Y = 1024
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4096
+		Y = 1024
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1536
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 4608
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 4
+		SubType = 0
+		X = 1024
+		Y = 1024
+		ItemType = 254
+	}
+	Enemy {
+		Type = 4
+		SubType = 1
+		X = 5120
+		Y = 1024
+		ItemType = 254
+	}
+}
+
+Spawn {
+	Frame = 8000
+	Amount = 1
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 512
+		Y = 2048
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 8030
+	Amount = 1
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 5632
+		Y = 2048
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 8060
+	Amount = 1
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 1024
+		Y = 1536
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 8090
+	Amount = 1
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 5120
+		Y = 1536
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 8120
+	Amount = 1
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 1536
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 8150
+	Amount = 1
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 4608
+		Y = 1024
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 8180
+	Amount = 1
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 2048
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 8210
+	Amount = 1
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 4096
+		Y = 512
+		ItemType = 255
+	}
+}
+
+Spawn {
+	Frame = 8240
+	Amount = 8
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 512
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 5632
+		Y = 768
+		ItemType = 255
+	}
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 1536
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 4608
+		Y = 1024
+		ItemType = 255
+	}
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 2048
+		Y = 256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 4096
+		Y = 256
+		ItemType = 255
+	}
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 2560
+		Y = 512
+		ItemType = 255
+	}
+	Enemy {
+		Type = 6
+		SubType = 0
+		X = 3584
+		Y = 512
+		ItemType = 255
+	}
+}

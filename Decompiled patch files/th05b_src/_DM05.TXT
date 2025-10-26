@@ -1,0 +1,247 @@
+PROC
+	CHARACTER 
+	PORTRAIT 4
+	BOSS 
+	TEXT "Ê{aÈaz ¿# ¯Uj$ Ò ,Ã#<r>...AYcP Å±É¸ÅÈ"
+	CHARACTER 
+	TEXT "!²c©¼ ËYÁv$ "
+	FADEWHITE 0
+	ENEMYU 
+	ENEMYL "st05.bb1"
+	ENEMYL "st05.bb2"
+	ENEMYL "st05.bb3"
+	ENEMYL "st05.bb4"
+	ENEMYPOS 192, 48, 180
+	FADERESTORE 1
+	BOSS 
+	PORTRAIT 3
+	TEXT "Å±É¸ÅÈ ,Â|­µP *¸ ¶° ¾ÉÚ <r>...BÍ¨ ÑÅ¬$ Ê¨ }¼*° "
+	BOSS 
+	TEXT ".*ÁÉ|¸aÀ ²´V º¤XÄ <r>}c´ ²¼$ ¾¸ UÚ Ò <r>.ËT*z lQf "
+	CHARACTER 
+	TEXT "\"}­µP\" ²¼# A#Y¸ CUz }µ¬ <r>ÛÊf ¶° Ê¨ ¾É¹±M|{$ .Û*Éf$ <r>?#V*¸ »# *½À"
+	BOSS 
+	TEXT "»U¬# º´ ,Ê½ÈXWz# ,ÃØ<r>.U¡Ú Êc©¼ "
+	BOSS 
+	TEXT "        Ë*±¸ B¹°*L<r>           Ê±½f "
+	BOSS 
+	PORTRAIT 4
+	TEXT ".B¹°*L *¼$ - NÉMj #WÀ <r>ÂµP#UÚ *¸ ¶°Ä #WÀ Ë*±¸ º´*z <r>.Ê­µP ¾¸"
+	CHARACTER 
+	PORTRAIT 3
+	TEXT "<e4> ...»*¹{ ,Ã#"
+	CHARACTER 
+	PORTRAIT 4
+	TEXT ".#V# tÉcÚ Y¸Ó#<r>.Ë*±¸ ¶ÀÓ Y¸# ËXUj# "
+	BOSS 
+	TEXT "?Y¸$ Ë$ "
+	CHARACTER 
+	TEXT "Yg^´# º´*z Ð´# #Å{@È Ò$ <r>!#W±À YÉE°"
+	BOSS 
+	TEXT ".}¹Á¨ <r>.*­LÒ ºÀY^P@b "
+	CHARACTER 
+	TEXT "!¿Ò# ,*­LÒ dÉ´ ,Ò "
+	BOSS 
+	TEXT "ºÀY^P@b *¹ÚX ,*½cL<r><e6>.\"Ò*L ¿Ò#\"  "
+	CHARACTER 
+	TEXT "!?"
+	BOSS 
+	PORTRAIT 5
+	TEXT ".Ê©|Q{ ¿# U¡Ú ºÀY^P@b "
+	CHARACTER 
+	TEXT "!?·*|­´# ¾ÈUÈY{ "
+	BOSS 
+	TEXT ".ºÌ#YI´# ºwz$ ¾¸ Ê¹´*z T*c¨&"
+	BOSS 
+	TEXT ".Y©|¥È Ò ÛÊf #WÀ"
+	CHARACTER 
+	TEXT ".*½cL <r>¾¸ UÚ Ò ,Aa¨ #V# ¾±´<r>!³UzÅÚ Ê¨Å{ ¿#"
+	BOSS 
+	TEXT "!!XÄY¥µ´ *È ?Ê½É¸aÁ|b <r>TYI¸ }¼#Ä Ê½É¸aÁ{ ªÉ° <r>?U^¡¹´# B¸T*P *È »*±M´# B^µ°"
+	CHARACTER 
+	PORTRAIT 3
+	TEXT "<e4> ...Ê½¡È ,*½cL"
+	CHARACTER 
+	PORTRAIT 4
+	CLEARBOX 
+	BOSS 
+	TEXT "!!$U^¼ *ÉÀ  "
+	MUSIC "ST05B"
+	HALT 
+ENDP
+PROC
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	TEXT "Ê{aÈaz ¿# ¯Uj$ Ò ,Ã#<r>...AYcP Å±É¸ÅÈ"
+	CHARACTER 
+	TEXT "!²c©¼ ËYÁv$ "
+	FADEWHITE 0
+	ENEMYU 
+	ENEMYL "st05.bb1"
+	ENEMYL "st05.bb2"
+	ENEMYL "st05.bb3"
+	ENEMYL "st05.bb4"
+	ENEMYPOS 192, 48, 180
+	FADERESTORE 1
+	BOSS 
+	PORTRAIT 3
+	TEXT ",*Á|¹ÈaÀ ¾¸ }½±¹{ ²¼# *¹Ú <r>}c´ ²¼$ ¾¸ UÚ Ò <r>.ËT*z lQf "
+	CHARACTER 
+	TEXT ",¿Ò# *½À Ê½¼# *¹Ú <r>.*oÈ$ ²¸aÀ@b *¹ÚX "
+	BOSS 
+	TEXT "²|­D Ê{@{ ¾È$ ¾¸<r>?ÃWÀ ²c©½Ú"
+	CHARACTER 
+	TEXT ".YcP$ ¿# UÈX$ Ò ,Br*cÚ ¶±Ú"
+	BOSS 
+	TEXT ".º¹¸"
+	CHARACTER 
+	PORTRAIT 1
+	TEXT "<e6>.¿Ò# $U^½µ¨ ,*ÉÀ *ÉÀ"
+	CHARACTER 
+	TEXT "¶¹°@b ²¸aÀ# *¸U½z <r>.ÑÅ¬Ó# BÉ´*|´# ¶{*¬$Ä "
+	BOSS 
+	TEXT ".\"BÉ´*{\" ³*½À dÉ´ ,ªbÖ´ "
+	BOSS 
+	TEXT "        Ë*±¸ B¹°*L<r>           Ê±½f "
+	BOSS 
+	PORTRAIT 4
+	TEXT ".#WÀ Ë*±¸ º´*z }­µP Ê|´# *¼$<r>.Ê½¸ ÑÅ¬$ ³*½À dÉ´"
+	CHARACTER 
+	TEXT "!!"
+	CHARACTER 
+	PORTRAIT 4
+	TEXT ".ªbÖ´ *È ,»*¹{"
+	BOSS 
+	PORTRAIT 5
+	TEXT "Yg^´# YMb ¿# *­L ¾ÈU­|¡{$ <r>?Êµz _µ¥|Éb #WÀ ªÈa¹´#"
+	CHARACTER 
+	TEXT "TYI¸ ÃWÀ \"ªÈa¸\" B¹µ° }cÉ´$<r>?»aÁÈ *¸U½z Yb*Q´# Â¸UQ|cÈ XWz"
+	BOSS 
+	TEXT "!!BL*¬Å´# ÃWÀ *¸ ,«$<r>.¿Ò# Ê­É­M´# YMc´# ²ÈX@b"
+	CHARACTER 
+	TEXT "<e6>.Â|ÈÆY´ CT*¡c´# º{$ Ê¨ ¿Å°@b"
+	CHARACTER 
+	PORTRAIT 4
+	CLEARBOX 
+	BOSS 
+	TEXT "!!$U^¼ *ÉÀ  "
+	MUSIC "ST05B"
+	HALT 
+ENDP
+PROC
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	TEXT "Ê{aÈaz ¿# ¯Uj$ Ò ,Ã#<r>...AYcP Å±É¸ÅÈ"
+	CHARACTER 
+	TEXT ".²c©¼ ËYÁv$ "
+	FADEWHITE 0
+	ENEMYU 
+	ENEMYL "st05.bb1"
+	ENEMYL "st05.bb2"
+	ENEMYL "st05.bb3"
+	ENEMYL "st05.bb4"
+	ENEMYPOS 192, 48, 180
+	FADERESTORE 1
+	BOSS 
+	PORTRAIT 3
+	TEXT "Å±É¸ÅÈ ,Â|­µP *¸ ¶° ¾ÉÚ <r>...BÍ¨ ÑÅ¬$ Ê¨ }¼*° "
+	BOSS 
+	TEXT ".*Á|¹ÈaÀ ¾¸ }½±¹{ ²½±´<r>?t^o´*Ú }¼$ ¾¸"
+	CHARACTER 
+	TEXT "*Á|µ{*¬ Ê|´# C*|©´# ²µ{ <r>?²­µP ¾¸ }¼*° ¶Éµ¬ ¶^¬"
+	BOSS 
+	TEXT "YÉP@|´# Ðµz Ê½ÉM¸*b ,Ã# <r>.³X*^P& Ê¨"
+	BOSS 
+	TEXT "        Ë*±¸ B¹°*L<r>           Ê±½f "
+	BOSS 
+	PORTRAIT 4
+	TEXT ",Ë*±¸ }­µP Ê|´# *¼$ <r>.Â¹±M{ Ê|´# *¼$Ä"
+	BOSS 
+	TEXT "ºÉ´Å¤ }cÉ´ Å±É¸ÅÈ ,Ê´*|´*^¨ <r>B½°*b ÊÀ ¶Ú ,#WÁ° ÛÊf Ä$<r>.BÈT*z Ë*±¸ "
+	CHARACTER 
+	PORTRAIT 1
+	TEXT ".}¹Á¨ <r>º±M{ Ê|´# *¼$ ¾±´ <r>(BÚW°) .Yg^´# º´*z"
+	CHARACTER 
+	PORTRAIT 0
+	TEXT "¿ÅÉÈ*±¹´# TUz ,·*L Ë$ Ðµz <r>Yg^´# º´*z Ð´# ¿Å{@È ¾ÈW´#<r>.BÈ*¥µ´ YÉ^°"
+	BOSS 
+	PORTRAIT 5
+	TEXT "}½±¹{ #V& ,*½cL .}¹Á¨ <r>.ÂÚ «Yk{@b ,Ê|¹ÈaÀ ¾¸ "
+	CHARACTER 
+	TEXT "?#V& *¼$UÚ ÕÀ .»*¹{ "
+	BOSS 
+	TEXT "#WÁÚ Ê¡|¹|c{ ¿# ¶¸# <r>.ÕÉµ¬ Å´Ä Ð|L "
+	CHARACTER 
+	PORTRAIT 4
+	TEXT "²¼$ ¶¹|M¹´# ¾¸ ¾±´<r>!!ÂÚ Ê¡|¹|c{ ¾´ "
+	BOSS 
+	TEXT "!!BL*¬Å´# ÃWÀ *¸ ,«$"
+	CHARACTER 
+	PORTRAIT 0
+	CLEARBOX 
+	BOSS 
+	TEXT "!!$U^¼ *ÉÀ  "
+	MUSIC "ST05B"
+	HALT 
+ENDP
+PROC
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	TEXT "Ê{aÈaz ¿# ¯Uj$ Ò ,Ã#<r>...AYcP Å±É¸ÅÈ"
+	CHARACTER 
+	TEXT ".ÊHYP# ,*ÉÀ "
+	FADEWHITE 0
+	ENEMYU 
+	ENEMYL "st05.bb1"
+	ENEMYL "st05.bb2"
+	ENEMYL "st05.bb3"
+	ENEMYL "st05.bb4"
+	ENEMYPOS 192, 48, 180
+	FADERESTORE 1
+	BOSS 
+	PORTRAIT 3
+	TEXT "Å±É¸ÅÈ ,Â|­µP *¸ ¶° ¾ÉÚ <r>...BÍ¨ ÑÅ¬$ Ê¨ }¼*° "
+	BOSS 
+	TEXT ",*Á|¹ÈaÀ ¾¸ }½±¹{ ²¼# *¹Ú <r>}c´ ²¼$ ¾¸ UÚ Ò <r>.ËT*z lQf "
+	CHARACTER 
+	TEXT "º´*¡´# #WÀ Ê¨ ¾É¹±M|{$ .«$<r>?#V*¸ »#"
+	BOSS 
+	TEXT "»U¬# º´ ,Ê½ÈXWz# ,ÃØ<r>.U¡Ú Êc©¼ "
+	BOSS 
+	TEXT "        Ë*±¸ B¹°*L<r>           Ê±½f "
+	BOSS 
+	PORTRAIT 4
+	TEXT ".B¹°*L *¼$ - NÉMj #WÀ <r>ÂµP#UÚ *¸ ¶°Ä #WÀ Ë*±¸ º´*z <r>.Ê­µP ¾¸"
+	CHARACTER 
+	PORTRAIT 3
+	TEXT "<e4> ?UIÚ ,ÕÁ¸ ,Ã#"
+	BOSS 
+	TEXT "¶Ì*À X*¸T }^^b U­´<r>.Ë*±¸ Ê¨ *½À"
+	BOSS 
+	TEXT ",¯Å^c¸ YÉ¤ #WÀ<r>.*ÉkQf ²^¬*z@b Ê½½±´"
+	CHARACTER 
+	PORTRAIT 0
+	TEXT ".*oÈ# CXÄY¥¸ }¼$<r>,º´*z B¹°*L }½° ¿# Ð|L<r>!CÅ¬ ¿ÄT ÛÊf Ò }¼#"
+	BOSS 
+	TEXT ".#V# *½cL <r>.*½¸ ÑÅ¬Ó# ¾¸ ÑY½µ¨ "
+	CHARACTER 
+	TEXT ",ª¡n# }½° ¿# Ð|L<r>!#UÚ$ «Y|z# ¾´"
+	BOSS 
+	PORTRAIT 5
+	TEXT "!¿Ò# XÄY¥Ú «Yk|{ Ê|´# }¼$ <r>!!B¼*c¼# TYI¸ ²¼# Êc½{ Ò"
+	CHARACTER 
+	PORTRAIT 3
+	TEXT "!!Yg^´# ²µ{ ¢¸ Ê½É¼X*­{ Ò "
+	BOSS 
+	TEXT "!ºÁÈ Ò"
+	CHARACTER 
+	PORTRAIT 0
+	CLEARBOX 
+	BOSS 
+	TEXT "!!$U^¼ *ÉÀ  "
+	MUSIC "ST05B"
+	HALT 
+ENDP

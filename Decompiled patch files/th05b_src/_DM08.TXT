@@ -1,0 +1,125 @@
+PROC
+	MUSIC "$"
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	PORTRAIT 0
+	TEXT "...             "
+	MUSIC "ST03D"
+	BOSS 
+	PORTRAIT 2
+	TEXT ".*ÍÉb dÉ´ ²Ì#T$ ,}¼$ *È "
+	CHARACTER 
+	TEXT "!?"
+	BOSS 
+	TEXT "Ò CUÌ*©´# B¹ÈUz ¿$ *¹Ú<r>·*|­´# Ê½½±¹È ,¿Ò# Ê½­É¡{ <r>.#YÉP$ BÈUIÚ"
+	BOSS 
+	TEXT "!!²f ÕÚ ¿Ò# ²¸aÀ@b"
+	HALT 
+	BOSS 
+	PORTRAIT 4
+	CHARACTER 
+	PORTRAIT 1
+	TEXT "ZÅ¨@b }½° Ê½¼$ #ÄU^È<r>.·#ÅLÓ# ¶° Ê¨ B´ÅÁcÚ"
+	BOSS 
+	TEXT "<e9>?#W±À BÈÅ¬ }¼# #V*¹´"
+	CHARACTER 
+	TEXT "¶Ú*¬Ó `*ÀW´# UÈX# ,¿Ò#Ä <r><e6>.CUgÚ Ë*±¸ B¹ÉzZ"
+	BOSS 
+	TEXT "<e9> ...³UfX@b ,*½cL"
+	HALT 
+ENDP
+PROC
+	MUSIC "$"
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	PORTRAIT 0
+	TEXT "... "
+	MUSIC "ST03D"
+	BOSS 
+	PORTRAIT 2
+	TEXT ".*ÍÉb dÉ´ ²Ì#T$ ,}¼$ *È "
+	CHARACTER 
+	TEXT "!?"
+	BOSS 
+	TEXT "Ò CUÌ*©´# B¹ÈUz ¿$ *¹Ú<r>·*|­´# Ê½½±¹È ,¿Ò# Ê½­É¡{ <r>.#YÉP$ BÈUIÚ"
+	BOSS 
+	TEXT "!!²f ÕÚ ¿Ò# ²¸aÀ@b"
+	HALT 
+	BOSS 
+	PORTRAIT 4
+	CHARACTER 
+	PORTRAIT 0
+	TEXT ".Êr#Ä ²µ¡¨Ä Ê´*z ²{Åj "
+	BOSS 
+	TEXT "<e9> ?CÅ­´# ÃWÁÚ }¼# #V*¹´"
+	CHARACTER 
+	TEXT "UHÓ _ÀV# ¾È# Ð´#<r>?ÑY{ *È ÑÅ¬# m*Qf$"
+	BOSS 
+	TEXT "<e9> ÎÀ# ÎÀ#"
+	HALT 
+ENDP
+PROC
+	MUSIC "$"
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	PORTRAIT 0
+	TEXT "... "
+	MUSIC "ST03D"
+	BOSS 
+	PORTRAIT 2
+	TEXT ".*ÍÉb dÉ´ ²Ì#T$ ,}¼$ *È "
+	CHARACTER 
+	PORTRAIT 1
+	TEXT "?YE°$ BÈUIÚ ¾Éµ{*­{ Ò *¹´ "
+	BOSS 
+	TEXT "CUÌ*©´# B¹ÈUz ¿$ *¹Ú<r>,¿Ò# Ê¡¸ }cÉ´ <r>.²´V ¶¡¨@b Ê½¼$ ¾v$ "
+	BOSS 
+	TEXT "!!²f ÕÚ ¿Ò# ²¸aÀ@b"
+	HALT 
+	BOSS 
+	PORTRAIT 4
+	CHARACTER 
+	PORTRAIT 1
+	TEXT "¢¸ B­¨#Å|¸ }¼*° ²{Å¬<r>*¹°Ä .*^ÈY­{ Ê{*¡¬Å{<r>.BÉ¨*° ¾±{ º´ ,}¡¬Å{"
+	BOSS 
+	TEXT "<e9>...BÈ*¥µ´ BÈÅ¬ }¼$"
+	CHARACTER 
+	TEXT ".ºÁ¼@fÄ Û*©¡o´# ³Y{@b ,*½cL "
+	BOSS 
+	TEXT "<e9> ...KYM´#Ä u*^LÕ´ *È"
+	HALT 
+ENDP
+PROC
+	MUSIC "$"
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	PORTRAIT 0
+	TEXT "... "
+	MUSIC "ST03D"
+	BOSS 
+	PORTRAIT 2
+	TEXT ".*ÍÉb dÉ´ ²Ì#T$ ,}¼$ *È "
+	CHARACTER 
+	TEXT "!?"
+	BOSS 
+	TEXT "Ò CUÌ*©´# B¹ÈUz ¿$ *¹Ú<r>·*|­´# Ê½½±¹È ,¿Ò# Ê½­É¡{ <r>.#YÉP$ BÈUIÚ"
+	BOSS 
+	TEXT "!!²f ÕÚ ¿Ò# ²¸aÀ@b"
+	HALT 
+	BOSS 
+	PORTRAIT 4
+	CHARACTER 
+	PORTRAIT 1
+	TEXT "<e6>.ÕÉµ¬ Êµc¸ ¿*° #WÀ ,*½cL"
+	BOSS 
+	TEXT "<e9> ?}¼$ ¾¸"
+	CHARACTER 
+	TEXT "?*¼$<r>.¶ÉÉ¹H ·#Çb ¾¸ Â´ *È"
+	BOSS 
+	TEXT "AYcP Ê½¼# ¯Uj$ Ò<r><e9>!ÃWÁ° lQf Un"
+	HALT 
+ENDP

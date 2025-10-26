@@ -1,0 +1,39 @@
+DAT file names:
+‰öãY’k1
+‰öãY’k2
+
+Regarding dialogue files:
+Seems like only 15 fullwidth chars (30 halfwidth, total of 30 bytes) can be used per line.
+Regular spaces are fine in dialogue files, text issues are caused by lines not having an even number of bytes. Add spaces to ensure it fits this constraint.
+--Also, try to figure out what causes the flashbang bug.--
+Edit: Reason is a malformed WHITE.BMP file from compiling through MSTK. Simply don't compile it - you won't be patching it anyways.
+
+Regarding ending files:
+These MUST be edited in Notepad++ and NOT VSCode, due to VSC changing the NBSP used for some reason, likely due to differences in the way it encodes SJIS text.
+Limit is 60 halfwidth characters (30 fullwidth, 60 bytes). Make sure to replace all regular spaces with the ones in the existing patch files, otherwise it won't work.
+
+Regarding the music room comments:
+As a general rule, stick to the number of lines used by the original game.
+Increasing or decreasing will result in shifted lines.
+
+Each line needs to be EXACTLY 38 half width characters long (i.e. text editor should show Col 39 at end of line).
+However, when using full width characters (JP letters, kanji etc.) they take up double the space of a half width char, so subtract 1 space for each full width char. For example:
+This line (goes up to Col 39)
+      ぁあぃいぅうぇ                         
+Should instead be like this (goes up to Col 32 due to 7 full width chars)
+      ぁあぃいぅうぇ                  
+
+Regarding images:
+Stick to the existing palettes, otherwise the image won't work properly.
+Photoshop's Indexed Colour mode lets you make a Colour Lookup Table which can then be applied to an image to ensure it's as close as possible.
+This has worked for all images except the credits for some reason??
+
+Regarding hardcoded strings:
+Most of them (Music room song names and game titles, operation explanation, startup settings) are stored in OP.exe. Some are stored in MAIN.exe (stage result screen text, mai and yuki's theme names) and some are stored in MAINE.exe (ending result screen text, character names and titles for allcast credits).
+To build a new executable, take the corresponding .asm file from nmlgc's repository, edit it as needed and build it using the pipeline you've made.
+https://github.com/nmlgc/ReC98/tree/xJeePx
+Both VSCode and Notepad++ use a slightly different version of Shift-JIS to encode the characters, which most of the time causes code/data to be replaced.
+Sometimes this is fine and sometimes it causes problems (game not running, endings failing etc.) - keep a clean copy and make all your edits to another copy in VSCode, then use regular Notepad to replace the strings into the clean copy.
+
+Music room hardcoded strings:
+The main titles on the left have a maximum limit of 36 half width characters. As with the comments, take care not to exceed the limit, use ... if you have to. (a lot of the time i didn't because of arabic's phenomenal space efficiency babyyyyy)

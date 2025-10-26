@@ -1,0 +1,113 @@
+PROC
+	MUSIC "$"
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	PORTRAIT 3
+	TEXT "!!_µ±´# }½Ú *È  "
+	BOSS 
+	TEXT "... "
+	MUSIC "ST03C"
+	BOSS 
+	TEXT "!B½É¡µ´# *Á|È$ ¾ÈÆYI{ ªÉ° "
+	BOSS 
+	TEXT "!!¿Ò# BÈUIÚ ²µ{*¬@b "
+	HALT 
+	BOSS 
+	PORTRAIT 5
+	CHARACTER 
+	PORTRAIT 0
+	TEXT "UL#Ä Un ¿*½D# *|µ{*¬<r>.*{YcP ²´V ¢¸Ä"
+	BOSS 
+	TEXT "<e9>...u*^LÕ´ *È"
+	CHARACTER 
+	TEXT "¢¼*¸ ²ÈU´ ¶À ,*½cL<r>?Ê½{UfX# Å´ "
+	BOSS 
+	TEXT "<e9>!£###Ä"
+	HALT 
+ENDP
+PROC
+	MUSIC "$"
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	PORTRAIT 3
+	TEXT "!!_µ±´# }½Ú *È  "
+	BOSS 
+	TEXT "... "
+	MUSIC "ST03C"
+	BOSS 
+	TEXT "!B½É¡µ´# *Á|È$ ¾ÈÆYI{ ªÉ° "
+	BOSS 
+	TEXT "!!¿Ò# BÈUIÚ ²µ{*¬@b "
+	HALT 
+	BOSS 
+	PORTRAIT 5
+	CHARACTER 
+	PORTRAIT 1
+	TEXT "#W±À Ê|¬Ä ¾É¬Y¥|c{ Ò<r>!}M¹b Å´"
+	BOSS 
+	TEXT "<e9> ?CÅ­´# ÃWÁÚ }M^j$ ªÉ°"
+	CHARACTER 
+	TEXT "!BÉ´*|´# Ð´# *½Ú *ÉÀ ,*½cL"
+	BOSS 
+	TEXT "<e9> !£###Ä "
+	HALT 
+ENDP
+PROC
+	MUSIC "$"
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	PORTRAIT 3
+	TEXT "!!_µ±´# }½Ú *È  "
+	BOSS 
+	TEXT "... "
+	MUSIC "ST03C"
+	BOSS 
+	TEXT "!B½É¡µ´# *Á|È$ ¾ÈÆYI{ ªÉ° "
+	BOSS 
+	TEXT "!!¿Ò# BÈUIÚ ²µ{*¬@b "
+	HALT 
+	BOSS 
+	PORTRAIT 5
+	CHARACTER 
+	PORTRAIT 1
+	TEXT "¿*±¹´# ²µ{ Ð´# ³UfX@b <r>.AUzÄ *¹° "
+	BOSS 
+	TEXT "<e9> !³ÅHX$ ,Ò"
+	CHARACTER 
+	PORTRAIT 4
+	TEXT "ÑYPÓ# C*|©´# ²µ{ ¾±´<r><e6>.³*½À ³Yw|½{"
+	BOSS 
+	TEXT "<e9>!£###Ä"
+	HALT 
+ENDP
+PROC
+	MUSIC "$"
+	CHARACTER 
+	PORTRAIT 0
+	BOSS 
+	PORTRAIT 3
+	TEXT "!!_µ±´# }½Ú *È  "
+	BOSS 
+	TEXT "... "
+	MUSIC "ST03C"
+	BOSS 
+	TEXT "!B½É¡µ´# *Á|È$ ¾ÈÆYI{ ªÉ° "
+	BOSS 
+	TEXT "!!¿Ò# BÈUIÚ ²µ{*¬@b "
+	HALT 
+	BOSS 
+	PORTRAIT 5
+	CHARACTER 
+	PORTRAIT 1
+	TEXT "<e6>.³Y±f$<r>.ÕÉµ¬ }¡|¹|b# "
+	BOSS 
+	TEXT "<e9> ?}¼$ ¾¸"
+	CHARACTER 
+	TEXT "º° .BµÈÅr B¨*c¸ }¡s¬<r>...ÑY{ *È ¶j# Ð|L Ð­^{"
+	BOSS 
+	TEXT "...CYf*^¸ *½¸*¸$"
+	HALT 
+ENDP

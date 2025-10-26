@@ -1,0 +1,3 @@
+Use yychr to open the file.
+Switch the rendering method to 1 BPP 16x16 and turn the colours to black and white.
+Go to the bottom, shift the pixels slightly until your image aligns with the images provided, then you can edit it freely.
